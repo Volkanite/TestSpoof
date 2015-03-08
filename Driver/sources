@@ -1,0 +1,9 @@
+TARGETNAME=testspoof
+TARGETTYPE=DRIVER
+UMTYPE=console
+UMENTRY=DriverEntry
+MSC_WARNING_LEVEL=/w
+
+SOURCES=testspoof.c \
+    ssdt.c \
+    hooks.c

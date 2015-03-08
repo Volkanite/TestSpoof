@@ -1,0 +1,2 @@
+TS_ICON ICON    "ts.ico"
+DRIVER  DRIVER  "..\\Driver\\bin\\testspoof.sys"
