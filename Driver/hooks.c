@@ -108,13 +108,13 @@ NTSTATUS ZwQueryValueKey_Hook(
         
         valueInformation = KeyValueInformation;
         
-        // We are looking for the value BcdLibraryBoolean_AllowPrereleaseSignatures which can be found here:
-        // HKEY_LOCAL_MACHINE\BCD00000000\Objects\{SOMEGUID}\Elements\16000049\Element
-        // where {SOMEGUID} = BcdBootMgrObject_DefaultObject which can be found here:
-        // HKEY_LOCAL_MACHINE\BCD00000000\Objects\{9dea862c-5cdd-4e70-acc1-f32b344d4795}\Elements\23000003\Element
-        // However due to share lazyness, i am just going to assume that any value that is REG_BINARY, that has a
-        // data length of 1 and matches the name 'Element' is this value. Later someone can come and implement
-        // this properly to avoid any false-positives but i think these heuristics should do the trick.
+        // We are looking for the value BcdLibraryBoolean_AllowPrereleaseSignatures which can be found 
+        // here: HKEY_LOCAL_MACHINE\BCD00000000\Objects\{SOMEGUID}\Elements\16000049\Element
+        // where {SOMEGUID} = SYSTEM_BOOT_ENVIRONMENT_INFORMATION::BootIdentifier . However due to share
+        // lazyness, i am just going to assume that any value that is REG_BINARY, 
+        // that has a data length of 1 and matches the name 'Element' is this value. Later someone can 
+        // come and implement this properly to avoid any false-positives but i think these heuristics 
+        // should do the trick.
         
         if (valueInformation->Type == REG_BINARY
             && valueInformation->DataLength == 1
