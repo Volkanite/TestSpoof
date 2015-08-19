@@ -3,6 +3,8 @@ TestSpoof
 
 For those retarded applications that refuse to work because you are in test-signing mode. Trick them into thinking that you are NOT in test-signing mode.
 
+PATCHED! See => https://github.com/Volkanite/TestSpoof/issues/4
+
 Notes
 -----
 
