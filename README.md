@@ -5,6 +5,12 @@ For those retarded applications that refuse to work because you are in test-sign
 
 PATCHED! See => https://github.com/Volkanite/TestSpoof/issues/4
 
+Status
+------
+DayZ (BattlEye) - worky <br>
+Robocraft (EAC) - no worky <br>
+Rust (EAC) - no worky <br>
+
 Notes
 -----
 
