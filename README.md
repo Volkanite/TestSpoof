@@ -3,13 +3,13 @@ TestSpoof
 
 For those retarded applications that refuse to work because you are in test-signing mode. Trick them into thinking that you are NOT in test-signing mode.
 
-PATCHED! See => https://github.com/Volkanite/TestSpoof/issues/4
-
 Status
 ------
 DayZ (BattlEye) - worky <br>
-Robocraft (EAC) - no worky <br>
+Robocraft (EAC) - no worky  
 Rust (EAC) - no worky <br>
+
+EAC = PATCHED! See => https://github.com/Volkanite/TestSpoof/issues/4
 
 Notes
 -----
